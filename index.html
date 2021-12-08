@@ -1,0 +1,369 @@
+<html>
+    <head>
+        <title>Space-Tech Simulation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+    </head>
+    <section>
+        <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>                        
+  </button>
+    <a class="navbar-brand" href="#contact"><strong><tt>Kyra Verma</tt></strong></a>
+</div>
+
+<div class="collapse navbar-collapse" id="myNavbar">
+  <ul class="nav navbar-nav">
+    <li><a href="#my">MY IDEA</a></li>
+    <li><a href="#help">HOW WILL IT HELP OTHERS?</a></li>
+    <li><a href="#structure">STRUCTURE OF MY APP</a></li>
+      <li><a href="#api">API KEY URL</a></li>
+    <li><a href="#working">WORKING</a></li>
+      <li><a href="#facts">COOL SPACE FUN FACTS</a></li>
+    <li><a href="#contact">ABOUT ME</a></li>
+  </ul>
+</div>
+
+</nav>
+</section>
+    <body>
+        <div class="container">
+        <section id="welcome">
+            <img id="space" src="https://whjr.imgix.net/074d8d28-d26a-4040-9670-f154d9fa9c01.jpg" class="center">
+<style>
+    img{
+text-align: center;
+text-shadow: black;;
+border-radius: 20px;
+border-color: black;
+max-height: 300px;
+max-width: 400px;
+    }
+    body{
+        background-image:url(https://s3.envato.com/files/239216587/4.jpg);
+        background-size: cover;
+    }
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+<h1 id="heading">AN APP TO DETECT SPACE JUNK AND OTHER OBJECTS IN EARTH ORBIT</h1>
+            <style>
+            
+    #heading{
+        text-align:center;
+        text-shadow: black;
+background-color:gray;
+border-radius: 20px;
+color: whitesmoke;
+max-width: fit-content;
+text-align:center;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+margin-left: 190px;
+        margin-right: 150px;
+</style>
+            </section>
+            <hr>
+            
+            <section id="my">
+        <img src="https://analyticsindiamag.com/wp-content/uploads/2019/12/Debris-1-scaled.jpg" id="junkimg">
+                <h8 style="margin-left: 10px;">How much space junk is around the earth? How to detect the various objects? This app will help you know it all!<span id="mobilenet_score"></span></h8>
+                
+                <label id="label" text-capitalize>What is the idea all about?<br><span id="dots">...</span><span id="more">It has always been fascinating to me to know about the various unknown objects in space whether near or far. Even in our Earth's orbit, there are so many articles, known and unknown, which makes it even more interesting to study. This application is specifically designed for the same. For many viewers, this app is a complete guide to detecting these objects and understanding them.</span></label>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+                </script>
+                </section>
+            <hr width="200px">
+            <section id="help">
+                <div class="page-header" id="movies">
+        <h2 class="text-capitalize" style="color: white;">𝐇𝐎𝐖 𝐖𝐈𝐋𝐋 𝐈𝐓 𝐇𝐄𝐋𝐏 𝐎𝐓𝐇𝐄𝐑𝐒? </h2>
+        
+    </div>
+    <div class="bg-primary movie-head" data-toggle="collapse" data-target="#Saina">
+    <span class="glyphicon glyphicon-film"> </span> 𝐇𝐎𝐖 𝐖𝐈𝐋𝐋 𝐈𝐓 𝐇𝐄𝐋𝐏 𝐎𝐓𝐇𝐄𝐑𝐒?
+        <i class="fa fa-sort-desc"></i>
+        
+          </div>
+            <div id="Saina" class="collapse">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <img src="https://www.economist.com/img/b/1280/720/90/sites/default/files/20190720_LDD001.jpg" class="img-responsive img-thumbnail">
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie-text">
+            <h5 class="text-success text-left text-capitalize"> A complete guide to view the space objects in high graphics!
+        
+            </h5>
+        <p id="para">This idea can help others for detecting the space objects in Earth Orbit and shall be very exciting for space-lovers!<br>
+            Reasons to Explore Space <br>
+Human space exploration helps to address fundamental questions about our place in the Universe and the history of our solar system. Through addressing the challenges related to human space exploration we expand technology, create new industries, and help to foster a peaceful connection with other nations. <br>
+            Thus it will decrease all the neseccary tools and equipment to view the objects and the application shall be enough! </p>
+    </div>
+        </div>
+            </section>
+            <hr width="200px">
+            <section id="structure">
+            <h2 id="appheading" style="text-shadow: black;
+border-radius: 20px;
+color: whitesmoke;
+max-width: fit-content;">𝐒𝐓𝐑𝐔𝐂𝐓𝐔𝐑𝐄 𝐎𝐅 𝐌𝐘 𝐀𝐏𝐏</h2>
+               <label style="color: white;">The structure of my app is simple, neat and easy to use. The UI is very creative, and effective</label>
+                
+                <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://asc-csa.gc.ca/images/a-propos/retombees-de-l-espace-au-quotidien/defaut-main-terre-id-16729-og.jpg" style="width:100%">
+  <div class="text" style="color: white">ᴇᴀʀᴛʜ'ꜱ ᴏʀʙɪᴛ</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://www.pioneeringminds.com/wp-content/uploads/2019/10/Space-Exploration-103119.jpg" style="width:100%">
+  <div class="text">ᴡᴀɴᴛ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ?</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator-asia.com/headlines/markets/one-small-step-to-space-food-production-japan-seeks-firms-to-develop-regenerative-food-supply-system-for-space-exploration/12911600-1-eng-GB/One-small-step-to-space-food-production-Japan-seeks-firms-to-develop-regenerative-food-supply-system-for-space-exploration.jpg" style="width:100%">
+  <div class="text">ᴄʜᴏᴏꜱᴇ ᴍʏ ᴀᴘᴘ!</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+                
+                <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h2 class="text-capitalize" style="color: white; font-family: monospace;">USING THE APPLICATION</h2>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#harrypotter">
+    <img src="https://images.theconversation.com/files/379734/original/file-20210120-15-ni8svg.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" class="img-responsive">
+        <hr>
+        <p class="text-primary" class="text-capitalize"><strong>CLICK ON THE IMAGE TO GET THE API KEY URL AND KNOW MORE ABOUT THE APP</strong></p>
+    </div>
+    <div class="modal fade" id="harrypotter">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" class="text-capitalize">Detecting the objects</h4>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.theconversation.com/files/379734/original/file-20210120-15-ni8svg.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" class="img-responsive" class="img-responsive img_modal"> <p class="p_modal">Space exploration is not only interesting it is also important for increasing our knowledge. Here is the API Link- <br> <a href="https://api.le-systeme-solaire.net/rest/" target="_blank"><strong><b>API Link</b></strong></a></p>
+            </div>
+        </div>
+        </div>
+    </div>
+            </section>
+            
+            <section id="api">
+                <h2 id="url"><strong><bold>*HERE IS THE WEB API URL-* </bold></strong></h2> 
+                <br>
+    <a href="https://api.le-systeme-solaire.net/rest/" target="_blank"><strong><b>API Link</b></strong></a>
+            </section>
+            <Section id="working">
+            <label style="color: white;">ᴛʜᴇ ᴡᴏʀᴋɪɴɢ ᴏꜰ ᴍʏ ᴀᴘᴘ ɪꜱ ꜱᴍᴏᴏᴛʜ ᴀɴᴅ ɢʟɪᴛᴄʜ-ꜰʀᴇᴇ. ɪᴛ ꜰɪʀꜱᴛʟʏ ɴᴀᴠɪɢᴀᴛᴇꜱ ᴛᴏ ᴛʜᴇ ꜱᴄʀᴇᴇɴ 2 ᴏɴ ᴄʟɪᴄᴋ ᴏꜰ ᴛʜᴇ ʙᴜᴛᴛᴏɴ. ɪɴ ꜱᴄʀᴇᴇɴ 2, ᴏɴᴇ ᴄᴀɴ ꜱᴇᴇ ᴛʜᴇ ᴍᴀᴘ ᴀɴᴅ ᴡᴇʙ ᴠɪᴇᴡᴇʀ ᴡʜɪᴄʜ ꜰʀᴏᴍ ᴊꜱᴏɴ, ᴛʜᴇ ʀᴇꜱᴘᴏɴꜱᴇ ɪꜱ ᴅɪꜱᴘʟᴀʏɪɴɢ ᴏꜰ ᴛʜᴇ ᴏʙᴊᴇᴄᴛꜱ ɴᴇᴀʀᴇꜱᴛ ᴛᴏ ᴇᴀʀᴛʜ ᴀɴᴅ ꜱʜᴏᴡɪɴɢ ᴛʜᴇ ɴᴀᴍᴇ ɪɴ ᴛʜᴇ ʟᴀʙᴇʟ.</label>
+            </Section>
+            <hr width="200px">
+            
+        <section id="facts">
+            <label style="color: white;">𝐂𝐎𝐎𝐋 𝐅𝐔𝐍 𝐅𝐀𝐂𝐓𝐒!</label>
+              <table border="2" bordercolor="red">
+            <caption id="c1" style="color: white;"><b>ᴛᴀʙʟᴇ : ᴘʟᴀɴᴇᴛꜱ</b></caption>
+                <tr id="table1" bgcolor="lightgreen">
+                    <th>ɴᴀᴍᴇ</th>
+                    <th id="th2">ꜰᴀᴄᴛ</th>
+                    <th>ꜱᴏᴜʀᴄᴇ</th>
+                </tr>
+                <tr>
+                    <td style="color: ghostwhite;">Mercury</td>
+                    <td style="color: ghostwhite;">Mercury is hot, but not too hot for ice</td>
+                    <td style="color: ghostwhite;">Universe Today</td>
+                </tr>
+                <tr>
+                    <td style="color: ghostwhite;">Venus</td>
+                    <td style="color: ghostwhite;">Venus doesn’t have any moons, and we aren’t sure why.</td>
+                    <td style="color: ghostwhite;">Universe Today</td>
+                </tr>
+                <tr>
+                    <td style="color: ghostwhite;">Earth</td>
+                    <td style="color: ghostwhite;">One year on Earth is exactly 365.2564 days</td>
+                    <td style="color: ghostwhite;">Universe Today</td>
+                </tr>
+                <tr>
+                    <td style="color: ghostwhite;">Mars</td>
+                    <td style="color: ghostwhite;"> Mars had a thicker atmosphere in the past.</td>
+                    <td style="color: ghostwhite;">Universe Today</td>
+                </tr>
+                  <tr>
+                    <td style="color: ghostwhite;">Jupiter</td>
+                    <td style="color: ghostwhite;"> Jupiter is a great comet catcher.</td>
+                    <td style="color: ghostwhite;">Universe Today</td>
+                </tr>
+                  <tr>
+                    <td style="color: ghostwhite;">Saturn</td>
+                    <td style="color: ghostwhite;">No one knows how old Saturn’s rings are.</td>
+                    <td style="color: ghostwhite;">Universe Today</td>
+                </tr>
+                  <tr>
+                    <td style="color: ghostwhite;">Uranus</td>
+                    <td style="color: ghostwhite;">Uranus is more stormy than we thought.</td>
+                    <td style="color: ghostwhite;">Universe Today</td>
+                </tr>
+                  <tr>
+                    <td style="color: ghostwhite;">Neptune</td>
+                    <td style="color: ghostwhite;">Neptune has supersonic winds.
+
+</td>
+                    <td style="color: ghostwhite;">Universe Today</td>
+                </tr>
+            </table> 
+            </section>
+            <section id="contact">
+                <h2 style="color: white">𝐂𝐎𝐍𝐓𝐀𝐂𝐓</h2>
+                <h3 class="text-capitalize" style="color: white">𝐍𝐀𝐒𝐀: 𝐍𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐀𝐞𝐫𝐨𝐧𝐚𝐮𝐭𝐢𝐜𝐬 𝐀𝐧𝐝 𝐒𝐩𝐚𝐜𝐞 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐭𝐢𝐨𝐧</h3>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.1407465622797!2d87.82890771432582!3d25.13093204055436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fa931eb00d7fcf%3A0x2e71d1a0fcda3035!2sNASA!5e0!3m2!1sen!2sin!4v1638517744580!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+<hr style="width: 100%">
+      <img id="kimage" src="kyra-img.png" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+      <h3 id="contacth3"><strong>Kyra Verma</strong></h3>
+        <div class="contact_1">
+
+           <a href="mailto:crystalwaterblue@gmail.com?Subject=Hi" target="_blank">
+               <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;manishverma7679@gmail.com</h5>
+            </a> 
+        </div>
+            </section>
+            <hr width="200px">
+            </div>
+    </body>
+</html>

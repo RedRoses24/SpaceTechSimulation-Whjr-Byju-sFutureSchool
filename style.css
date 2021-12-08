@@ -1,0 +1,69 @@
+#space{
+    margin-top: 30px;
+}
+.container #welcome{
+    max-width: 800%;
+    background-image: url(https://wallpaperaccess.com/full/1410357.jpg);
+    border-radius: 20px;
+    background-size: cover;
+}
+#junkimg{
+    border-radius: 20px;
+    max-height: 500px;
+    max-width: 300px;
+text-shadow: black;
+    display: inline-block;
+    border-color: #303030;
+    border-width: 10px;
+}
+hr{
+    max-width: 200px;
+}
+#my{
+    background-color: #303030;
+    border-radius: 20px;
+}
+h8{
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+}
+img{
+    pointer-events: none;
+}
+.container{
+    background-color: black;
+}
+#label{
+    color: white;
+}
+#mark1{
+  text-shadow: black;
+background-color:
+border-radius: 20px;
+color: whitesmoke;
+max-width: fit-content;  
+}
+#para{
+    color: white;
+}
+#appheading, #url, #contacth3{
+    color: white;
+}
+a:link {
+color:blueviolet;
+}
+a:visited {
+color:yellow;
+}
+a:hover {
+color:orangered;
+}
+#heading:hover{
+    background-color: aquamarine;
+    color: black;
+}
+#th2{
+    text-align: center;
+}
+
